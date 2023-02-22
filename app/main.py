@@ -25,6 +25,6 @@ async def scrape():
         likes = post['likes']
         comments = post['comments']
         shares = post['shares']
-        p = {"text": text, "time": time,"video": video, "likes": likes,"comments": comments, "time": time}
-        collection.insert_one(p)   
+        p = {"text": text, "time": time,"video": video, "likes": likes,"comments": comments, "shares": shares}
+        collection.insert_one(p)
     return {"message": "Scrapping done!"}
