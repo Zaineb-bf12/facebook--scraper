@@ -11,6 +11,7 @@ This repository contains a requirement.txt file that contains the required pytho
 
 # .Usage
 
- docker compose up
- 
- http://localhost:8000/scrape
+$ docker compose up
+
+This will start a container running our FastAPI application and MongoDB database. You can then access the application by going to  http://localhost:8000/scrape in your web browser.
+
